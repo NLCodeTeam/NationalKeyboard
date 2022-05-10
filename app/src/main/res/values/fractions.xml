@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <fraction name="keyboard_key_width">8.500002%p</fraction>
+    <fraction name="keyboard_key_height">6.4%p</fraction>
+    <fraction name="keyboard_hor_gap">0.6%p</fraction>
+    <fraction name="keyboard_ver_gap">1.2%p</fraction>
+    <fraction name="keyboard_10">10%p</fraction>
+    <fraction name="keyboard_23">23.000004%p</fraction>
+</resources>

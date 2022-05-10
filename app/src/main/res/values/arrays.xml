@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="languages" >
+        <item>Аварский</item>
+        <item>Английский</item>
+        <item>Даргинский</item>
+        <item>Ингушский</item>
+        <item>Кабардино-черкесский</item>
+        <item>Карачаево-балкарский</item>
+        <item>Кумыкский</item>
+        <item>Лакский</item>
+        <item>Лезгинский</item>
+        <item>Русский</item>
+        <item>Чеченский</item>
+        <item>Осетинский</item>
+    </string-array>
+</resources>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">Национальная клавиатура</string>
+    <string name="languages_title">Выберите языки</string>
+    <string name="wallpapers_title">Выберите фон</string>
+
+    <string-array name="main_content_info">
+        <item name="enable_tw">Шаг 1: включите клавиатуру (Кавказская клавиатура)</item>
+        <item name="select_kb_tw">Шаг 3: выберите текущую клавиатуру</item>
+        <item name="select_lang_tw">Шаг 2: выберите доступные языки</item>
+        <item name="dictionary_tw">Шаг 4: подключите словари (если есть в списке)</item>
+        <item name="wallpaper_tw">Шаг 4: выберите фон</item>
+    </string-array>
+
+    <string-array name="main_content_titles">
+        <item name="enable_btn">Включить клавиатуру</item>
+        <item name="select_kb_btn">Выбрать клавиатуру</item>
+        <item name="select_lang_btn">Национальные языки</item>
+        <item name="dictionary_btn">Словари</item>
+        <item name="wallpaper_btn">Фон</item>
+    </string-array>
+
+    <string name="enable_keyboard_title">Включить клавиатуру</string>
+    <string name="select_keyboard_title">Выбрать клавиатуру</string>
+    <string name="select_lang_keyboard_title">Национальные языки</string>
+    <string name="dictionary_keyboard_title">Словари</string>
+    <string name="wallpapers_keyboard_title">Фон</string>
+    <string name="test_keyboard_title">Попробовать</string>
+
+    <string name="label_subtype_generic">%s</string>
+    <string name="label_subtype_en_GB">English (GB)</string>
+    <string name="switch_num">\?123</string>
+    <string name="space"></string>
+    <string name="switch_sym">\?123</string>
+    <string name="label_go_key" />
+    <string name="label_next_key" />
+    <string name="label_send_key" />
+
+
+    <string name="emoji_people">People</string>
+    <string name="emoji_nature">Nature</string>
+    <string name="emoji_cars">Cars</string>
+    <string name="emoji_backspace">Backspace</string>
+    <string name="emoji_food">Food</string>
+    <string name="emoji_sport">Sport</string>
+    <string name="emoji_electronics">Electronics</string>
+    <string name="emoji_symbols">Symbols</string>
+    <string name="emoji_recent">Recent Emojis</string>
+    <string name="label_alt_key">alt</string>
+    <string name="label_alpha_key">alpha</string>
+</resources>

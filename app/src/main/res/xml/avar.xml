@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboard android:keyWidth="@fraction/keyboard_key_width"
+    android:keyHeight="@fraction/keyboard_key_height"
+    android:horizontalGap="@fraction/keyboard_hor_gap"
+    android:verticalGap="@fraction/keyboard_ver_gap"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Row>
+        <Key android:codes="-108" android:keyLabel="гъ"    android:keyEdgeFlags="left" />
+        <Key android:codes="-130"  android:keyLabel="гI" />
+        <Key android:codes="-104"  android:keyLabel="къ" />
+        <Key android:codes="-139" android:keyLabel="кь"  />
+        <Key android:codes="-120"  android:keyLabel="тI"/>
+        <Key android:codes="-112"  android:keyLabel="хъ"  />
+        <Key android:codes="-113"  android:keyLabel="хь" />
+        <Key android:codes="-134"  android:keyLabel="хI" />
+        <Key android:codes="-122"   android:keyLabel="цI"/>
+        <Key android:codes="-135"  android:keyLabel="чI" />
+        <Key android:codes="44" android:keyLabel=","   android:keyEdgeFlags="right" />
+    </Row>
+
+  <include layout="@xml/base_russian"/>
+
+    <Row>
+        <Key   android:codes="-1"  android:keyEdgeFlags="left" android:keyIcon="@mipmap/abc_shift" />
+        <Key   android:codes="-10" android:keyIcon="@mipmap/ic_language_black_24dp" />
+        <Key android:codes="33" android:keyLabel="!" />
+        <Key  android:codes="44" android:keyLabel="," />
+        <Key android:keyWidth="12.999998%p" android:codes="32" android:keyIcon="@mipmap/space_min"/>
+        <Key  android:codes="46" android:keyLabel="." />
+        <Key android:codes="63" android:keyLabel="\?" />
+        <Key  android:codes="-14" android:keyEdgeFlags="right" android:keyLabel="@string/switch_sym" />
+        <Key android:codes="-5" android:keyIcon="@mipmap/abc_delete"  />
+        <Key  android:keyWidth="12.999998%p"  android:codes="-4" android:keyIcon="@drawable/ic_check_black_24dp" android:keyEdgeFlags="right" android:isRepeatable="true" />
+    </Row>
+
+</Keyboard>

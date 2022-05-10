@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Keyboard android:keyWidth="@fraction/keyboard_key_width"
+    android:keyHeight="@fraction/keyboard_key_height"
+    android:horizontalGap="@fraction/keyboard_hor_gap"
+    android:verticalGap="@fraction/keyboard_ver_gap"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Row >
+        <Key android:horizontalGap="1.55%p" android:keyWidth="@fraction/keyboard_10" android:codes="230" android:keyLabel="æ"    android:keyEdgeFlags="left" />
+        <Key android:keyWidth="@fraction/keyboard_10" android:codes="-114"  android:keyLabel="дж"  />
+        <Key android:keyWidth="@fraction/keyboard_10" android:codes="-115"  android:keyLabel="дз" />
+        <Key android:keyWidth="@fraction/keyboard_10" android:codes="-104"  android:keyLabel="къ" />
+        <Key android:keyWidth="@fraction/keyboard_10" android:codes="-125"  android:keyLabel="пъ" />
+        <Key android:keyWidth="@fraction/keyboard_10" android:codes="-126"  android:keyLabel="тъ" />
+        <Key android:keyWidth="@fraction/keyboard_10" android:codes="-112"  android:keyLabel="хъ"  />
+        <Key android:keyWidth="@fraction/keyboard_10" android:codes="-127" android:keyLabel="цъ"  />
+        <Key android:keyWidth="@fraction/keyboard_10" android:codes="-128"   android:keyLabel="чъ"  android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row>
+        <Key android:codes="1081"  android:keyEdgeFlags="left" android:keyLabel="й" />
+        <Key android:codes="1094"  android:keyLabel="ц" />
+        <Key android:codes="1091"  android:keyLabel="у" />
+        <Key android:codes="1082"  android:keyLabel="к" />
+        <Key android:codes="1077"  android:keyLabel="е" />
+        <Key android:codes="1085"  android:keyLabel="н" />
+        <Key android:codes="1075"  android:keyLabel="г" />
+        <Key android:codes="1096"  android:keyLabel="ш" />
+        <Key android:codes="1097"  android:keyLabel="щ" />
+        <Key android:codes="1079"  android:keyLabel="з" />
+        <Key android:codes="1093"  android:keyEdgeFlags="right" android:keyLabel="х" />
+    </Row>
+
+    <Row>
+        <Key  android:codes="1092"  android:keyEdgeFlags="left" android:keyLabel="ф" />
+        <Key  android:codes="1099"  android:keyLabel="ы" />
+        <Key  android:codes="1074"  android:keyLabel="в" />
+        <Key  android:codes="1072"  android:keyLabel="а" />
+        <Key  android:codes="1087"  android:keyLabel="п" />
+        <Key  android:codes="1088"  android:keyLabel="р" />
+        <Key  android:codes="1086"  android:keyLabel="о" />
+        <Key  android:codes="1083"  android:keyLabel="л" />
+        <Key  android:codes="1076"  android:keyLabel="д" />
+        <Key  android:codes="1078"  android:keyLabel="ж" />
+        <Key  android:codes="1101"  android:keyLabel="э"  android:keyEdgeFlags="right" />
+    </Row>
+
+    <Row>
+        <Key  android:codes="1103"   android:keyEdgeFlags="left" android:isModifier="true" android:keyLabel="я" />
+        <Key  android:codes="1095"   android:keyLabel="ч" />
+        <Key  android:codes="1089"   android:keyLabel="с" />
+        <Key  android:codes="1084"   android:keyLabel="м" />
+        <Key  android:codes="1080"   android:keyLabel="и" />
+        <Key  android:codes="1090"   android:keyLabel="т" />
+        <Key  android:codes="1100"   android:keyLabel="ь" />
+        <Key  android:codes="1073"   android:keyLabel="б" />
+        <Key  android:codes="1102"   android:keyLabel="ю" />
+        <Key  android:codes="1098"   android:keyLabel="ъ" />
+        <Key  android:codes="1105"   android:keyLabel="ё"  android:keyEdgeFlags="right"  />
+    </Row> <!-- android:keyWidth="12.999998%p"-->
+
+    <Row >
+        <Key   android:codes="-1"  android:keyEdgeFlags="left" android:keyIcon="@mipmap/abc_shift" />
+        <Key    android:codes="-10" android:keyIcon="@mipmap/ic_language_black_24dp" />
+        <Key android:codes="33" android:keyLabel="!" />
+        <Key  android:codes="44" android:keyLabel="," />
+        <Key android:keyWidth="12.999998%p" android:codes="32" android:keyIcon="@mipmap/space"/>
+        <Key  android:codes="46" android:keyLabel="." />
+        <Key android:codes="63" android:keyLabel="\?" />
+        <Key   android:codes="-14" android:keyEdgeFlags="right" android:keyLabel="@string/switch_sym" />
+        <Key   android:codes="-5" android:keyIcon="@mipmap/abc_delete" />
+        <Key android:keyIcon="@drawable/ic_check_black_24dp" android:codes="-4"    android:keyWidth="12.999998%p" android:keyEdgeFlags="right" android:isRepeatable="true" />
+    </Row>
+</Keyboard>
