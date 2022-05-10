@@ -10,7 +10,7 @@ National Keyboard is a small keyboard for Caucasian languages based on modern An
 </p>
 </br>
 
-<img src="/previews/img.png" align="right" width="32%"/>
+<img src="/preview/img.png" align="right" width="32%"/>
 
 ## Tech stack & Open-source libraries
 - Minimum SDK level 23
