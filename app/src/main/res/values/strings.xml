@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Национальная клавиатура</string>
     <string name="languages_title">Выберите языки</string>
+    <string name="dictionaries_title">Выберите словари</string>
     <string name="wallpapers_title">Выберите фон</string>
 
     <string-array name="main_content_info">
