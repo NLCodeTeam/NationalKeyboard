@@ -1,6 +1,6 @@
 package ru.nlct.nationalkeyboard.domain.repository
 
-import ru.nlct.nationalkeyboard.ui.model.KeyboardLanguage
+import ru.nlct.nationalkeyboard.domain.model.KeyboardLanguage
 
 interface KeyboardLanguageRepository {
     suspend fun getLanguages(): List<KeyboardLanguage>

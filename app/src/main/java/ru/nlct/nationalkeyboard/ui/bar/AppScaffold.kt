@@ -12,7 +12,6 @@ import androidx.compose.material.ScaffoldState
 import androidx.compose.material.rememberScaffoldState
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import ru.nlct.nationalkeyboard.SettingsToolBar
 
 @Composable
 fun AppScaffold(

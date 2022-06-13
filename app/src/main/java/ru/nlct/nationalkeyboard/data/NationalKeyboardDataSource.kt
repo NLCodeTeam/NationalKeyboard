@@ -6,7 +6,7 @@ import kotlinx.coroutines.withContext
 import ru.nlct.nationalkeyboard.data.database.KeyboardLanguageDao
 import ru.nlct.nationalkeyboard.data.database.KeyboardLanguageEntity
 import ru.nlct.nationalkeyboard.domain.Mapper
-import ru.nlct.nationalkeyboard.ui.model.KeyboardLanguage
+import ru.nlct.nationalkeyboard.domain.model.KeyboardLanguage
 import javax.inject.Inject
 
 class NationalKeyboardDataSource @Inject constructor(

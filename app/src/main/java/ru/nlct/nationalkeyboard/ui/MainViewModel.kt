@@ -11,15 +11,20 @@ import kotlinx.coroutines.launch
 import ru.nlct.nationalkeyboard.domain.base.data
 import ru.nlct.nationalkeyboard.domain.usecase.GetLanguagesUseCase
 import ru.nlct.nationalkeyboard.domain.usecase.UpdateLanguagesUseCase
-import ru.nlct.nationalkeyboard.ui.model.DictionaryItem
-import ru.nlct.nationalkeyboard.ui.model.KeyboardLanguage
+import ru.nlct.nationalkeyboard.domain.model.DictionaryItem
+import ru.nlct.nationalkeyboard.domain.model.KeyboardLanguage
 import ru.nlct.nationalkeyboard.ui.model.ScreenNavigation
+import ru.nlct.nationalkeyboard.domain.model.WallpaperItem
+import ru.nlct.nationalkeyboard.domain.usecase.GetWallpapersUseCase
+import ru.nlct.nationalkeyboard.domain.usecase.SavedWallpaperUseCase
 import javax.inject.Inject
 
 @HiltViewModel
 class MainViewModel @Inject constructor(
     private val getLanguagesUseCase: GetLanguagesUseCase,
-    private val updateLanguagesUseCase: UpdateLanguagesUseCase
+    private val updateLanguagesUseCase: UpdateLanguagesUseCase,
+    private val getWallpapersUseCase: GetWallpapersUseCase,
+    private val savedWallpaperUseCase: SavedWallpaperUseCase
 ) : ViewModel() {
 
     private val _changeScreenState = MutableSharedFlow<ScreenNavigation>(replay = 0)
@@ -33,6 +38,10 @@ class MainViewModel @Inject constructor(
     private val dictsStateMutable = MutableStateFlow<List<DictionaryItem>>(listOf())
     val dictsState: StateFlow<List<DictionaryItem>>
         get() = dictsStateMutable
+
+    private val wallpapersStateMutable = MutableStateFlow<List<WallpaperItem>>(listOf())
+    val wallpapersState: StateFlow<List<WallpaperItem>>
+        get() = wallpapersStateMutable
 
     fun loadLanguages() {
         viewModelScope.launch {
@@ -70,6 +79,20 @@ class MainViewModel @Inject constructor(
     private fun openScreen(screen: ScreenNavigation) {
         viewModelScope.launch {
             _changeScreenState.emit(screen)
+        }
+    }
+
+    fun updateSelectedWallpaper(wallpaperItem: WallpaperItem?) {
+        viewModelScope.launch {
+            savedWallpaperUseCase(wallpaperItem)
+            val list = getWallpapersUseCase(Unit)
+            wallpapersStateMutable.emit(list)
+        }
+    }
+
+    fun loadWallpapers() {
+        viewModelScope.launch {
+            wallpapersStateMutable.emit(getWallpapersUseCase(Unit))
         }
     }
 }

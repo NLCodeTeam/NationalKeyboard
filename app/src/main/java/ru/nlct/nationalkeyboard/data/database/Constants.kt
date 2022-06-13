@@ -1,7 +1,7 @@
 package ru.nlct.nationalkeyboard.data.database
 
 import ru.nlct.nationalkeyboard.R
-import ru.nlct.nationalkeyboard.ui.model.KeyboardLanguage
+import ru.nlct.nationalkeyboard.domain.model.KeyboardLanguage
 
 object Constants {
     const val DATABASE_NAME = "keyboard.db"

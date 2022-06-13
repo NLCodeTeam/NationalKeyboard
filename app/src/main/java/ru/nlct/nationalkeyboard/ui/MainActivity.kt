@@ -18,6 +18,10 @@ import dagger.hilt.android.AndroidEntryPoint
 import ru.nlct.nationalkeyboard.R
 import ru.nlct.nationalkeyboard.di.theme.NationalKeyboardTheme
 import ru.nlct.nationalkeyboard.ui.model.ScreenNavigation
+import ru.nlct.nationalkeyboard.ui.screen.DictionariesContent
+import ru.nlct.nationalkeyboard.ui.screen.LanguagesContent
+import ru.nlct.nationalkeyboard.ui.screen.MainContent
+import ru.nlct.nationalkeyboard.ui.screen.WallpapersContent
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
@@ -54,7 +58,7 @@ class MainActivity : ComponentActivity() {
                         LanguagesContent(viewModel = viewModel)
                     }
                     composable(background) {
-                        KeyboardBackgroundContent(viewModel = viewModel)
+                        WallpapersContent(viewModel = viewModel)
                     }
                     composable(dict) {
                         DictionariesContent(viewModel = viewModel)

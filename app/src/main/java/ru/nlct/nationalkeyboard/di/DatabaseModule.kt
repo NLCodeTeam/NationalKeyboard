@@ -1,7 +1,9 @@
 package ru.nlct.nationalkeyboard.di
 
 import android.content.Context
+import android.content.SharedPreferences
 import androidx.room.Room
+import dagger.Binds
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,7 +17,7 @@ import ru.nlct.nationalkeyboard.data.database.KeyboardLanguageDao
 import ru.nlct.nationalkeyboard.data.database.KeyboardLanguageEntity
 import ru.nlct.nationalkeyboard.data.database.NationalKeyboardDatabase
 import ru.nlct.nationalkeyboard.domain.Mapper
-import ru.nlct.nationalkeyboard.ui.model.KeyboardLanguage
+import ru.nlct.nationalkeyboard.domain.model.KeyboardLanguage
 import javax.inject.Singleton
 
 @Module
@@ -51,4 +53,11 @@ internal object DatabaseModule {
                 KeyboardLanguageEntity(id, title, enabled)
             }
         }
+
+    @Provides
+    @Singleton
+    fun provideSharedPreferences(@ApplicationContext context: Context): SharedPreferences =
+        context.getSharedPreferences(SETTINGS, Context.MODE_PRIVATE)
+
+    private const val SETTINGS = "settings"
 }

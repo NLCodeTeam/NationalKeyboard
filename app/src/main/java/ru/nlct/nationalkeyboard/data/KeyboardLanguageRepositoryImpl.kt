@@ -2,7 +2,7 @@ package ru.nlct.nationalkeyboard.data
 
 import ru.nlct.nationalkeyboard.data.database.Constants
 import ru.nlct.nationalkeyboard.domain.repository.KeyboardLanguageRepository
-import ru.nlct.nationalkeyboard.ui.model.KeyboardLanguage
+import ru.nlct.nationalkeyboard.domain.model.KeyboardLanguage
 import javax.inject.Inject
 
 class KeyboardLanguageRepositoryImpl @Inject constructor(

@@ -48,4 +48,17 @@
     <string name="emoji_recent">Recent Emojis</string>
     <string name="label_alt_key">alt</string>
     <string name="label_alpha_key">alpha</string>
+
+    <string name="adygei">Флаг Адыгеи</string>
+    <string name="chechen">Флаг Чечни</string>
+    <string name="dagestan">Флаг Дагестана</string>
+    <string name="ingush">Флаг Ингушетии</string>
+    <string name="kbr">Флаг КБР</string>
+    <string name="kchr">Флаг КЧР</string>
+    <string name="os">Флаг Осетии</string>
+    <string name="ru">Флаг России</string>
+    <string name="uk">Флаг Великобритании</string>
+    <string name="usa">Флаг США</string>
+
+    <string name="wallpapers_delete">Без фона</string>
 </resources>

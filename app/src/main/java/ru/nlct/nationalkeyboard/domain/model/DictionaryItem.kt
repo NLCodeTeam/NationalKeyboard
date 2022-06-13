@@ -1,4 +1,4 @@
-package ru.nlct.nationalkeyboard.ui.model
+package ru.nlct.nationalkeyboard.domain.model
 
 data class DictionaryItem(
     val id: Int,
